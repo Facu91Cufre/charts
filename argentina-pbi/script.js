@@ -114,9 +114,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .enter()
         .append("rect")
         .attr("width", (w - margin.left - margin.right) / mappedData.length - 2)
-        .attr("height", (d, i) => h - yScale(d.value))
+        .attr("height", (d, i) => h - margin.bottom - yScale(d.value))
         .attr("x", (d, i) => xScale(mappedData[i].year))
-        .attr("y", (d, i) => yScale(d.value) - margin.bottom)
+        .attr("y", (d, i) => yScale(d.value))
         .attr("class", "bar")
         .style("fill", (d) => color(d.value))
         .on("mouseover", (event, d) => {
