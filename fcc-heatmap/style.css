@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Truculenta", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* SVG Container Styles */
+
+.svg-container {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* SVG Styles */
+
+svg {
+  background-color: rgb(218, 218, 182);
+}
+
+/* Title Styles */
+
+#title {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+/* Subtitle Styles */
+
+#description{
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+/* Axis Tag Styles */
+
+.tag {
+    font-size: 1.09rem;
+    font-weight: bold;
+}
+
+/* Tooltip */
+
+#tooltip{
+  position: absolute;
+  visibility: hidden;
+  padding: .75rem;
+  border-radius: .2rem;
+  background-color: white;
+  opacity: .85;
+  pointer-events: none;
+  text-align: center;
+  width: 9rem;
+}
