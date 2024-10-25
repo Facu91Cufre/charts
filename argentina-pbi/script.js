@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((data) => {
+      console.log(data)
       const yearGDP = data[1];
       const mappedData = yearGDP.map((year) => {
         return {
